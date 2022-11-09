@@ -24,10 +24,30 @@ const CourseDetails=()=>{
                 Course Videos
             </div>
             <ul className="list-group list-group-flush">
-              <li className="list-group-item">Introduction <button className="btn btn-danger float-end "><i class="bi bi-youtube"></i></button></li>
-              <li className="list-group-item">Setup Project <button className=" btn btn-danger float-end"><i class="bi bi-youtube"></i></button> </li>
-              <li className="list-group-item">Setup Project <button className=" btn btn-danger float-end"><i class="bi bi-youtube"></i></button> </li>
-              <li className="list-group-item">Setup Project <button className=" btn btn-danger float-end"><i class="bi bi-youtube"></i></button> </li>
+              <li className="list-group-item">Introduction 
+              <span className="float-end">
+              <span className="me-4">1:30 Mins</span>
+              <button className="btn btn-danger float-end "><i class="bi bi-youtube"></i></button>
+              </span>
+              </li>
+              <li className="list-group-item">Introduction 
+              <span className="float-end">
+              <span className="me-4">1:30 Mins</span>
+              <button className="btn btn-danger float-end "><i class="bi bi-youtube"></i></button>
+              </span>
+              </li>
+              <li className="list-group-item">Introduction 
+              <span className="float-end">
+              <span className="me-4">1:30 Mins</span>
+              <button className="btn btn-danger float-end "><i class="bi bi-youtube"></i></button>
+              </span>
+              </li>
+              <li className="list-group-item">Introduction 
+              <span className="float-end">
+              <span className="me-4">1:30 Mins</span>
+              <button className="btn btn-danger float-end "><i class="bi bi-youtube"></i></button>
+              </span>
+              </li>
             </ul>
            </div>
            <div className="container mt-4">

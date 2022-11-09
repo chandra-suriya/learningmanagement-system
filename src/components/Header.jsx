@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -21,6 +21,12 @@ const Header = () => {
             <li className="nav-item">
               <a className="nav-link active" href="#">Courses</a>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/user-register">Register</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" to="/user-login">Login</Link>
+            </li>
           </ul>
           <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -29,7 +35,7 @@ const Header = () => {
         </div>
       </div>
      </nav>
-    <Outlet />
+    
     </div>
     
   )
