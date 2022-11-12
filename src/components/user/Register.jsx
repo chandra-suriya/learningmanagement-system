@@ -37,6 +37,7 @@ function Register() {
                                 <div class="form-group mb-4">
                                     <label for="exampleFormControlTextarea1">Interest</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Interset" rows="3"></textarea>
+                                    <small id="suggest" class="form-text text-muted">Ex python, java ...</small>
                                 </div>
                                 <button type="submit" className="btn btn-primary">Submit</button>
                             </form>
