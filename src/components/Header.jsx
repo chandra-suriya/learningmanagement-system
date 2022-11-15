@@ -34,6 +34,19 @@ const Header = () => {
 
                 </div>
               </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Teacher
+                </a>
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link className="dropdown-item" to="/teacher-register">Register</Link>
+                <Link className="dropdown-item" to="/teacher-login">Login</Link>
+                  <div className="dropdown-divider"></div>
+                  <Link className="dropdown-item" to="/teacher-dashboard">Dash board</Link>
+                  <Link className="dropdown-item" to="/teacher-login">Logout</Link>
+
+                </div>
+              </li>
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

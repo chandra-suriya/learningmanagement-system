@@ -13,8 +13,15 @@ import FavouriteCourse from "./components/user/FavouriteCourses";
 import RecommendedCourse from "./components/user/Recommendedcourse";
 import ProfileSetting from "./components/user/ProfileSetting";
 import ChangePassword from "./components/user/ChangePassword";
-
-
+import Teacher_Login from "./components/teacher/Teacher_Login";
+import Teacher_Register from "./components/teacher/Teacher_Register";
+import Teacher_Dashboard from "./components/teacher/Teacher_Dashboard";
+import AddCourse from "./components/teacher/AddCourses";
+import My_students from "./components/teacher/My_students";
+import Teacher_Courses from "./components/teacher/Teacher_Courses";
+import Teacher_ProfileSetting from "./components/teacher/Teacher_ProfileSetting";
+import Teacher_ChangePassword from "./components/teacher/Teacher_ChangePassword";
+ 
 function App(){
     return(
          <div>
@@ -31,6 +38,14 @@ function App(){
              <Route path="/recommended" element={<RecommendedCourse />}/>
              <Route path="/user-profile-setting" element={<ProfileSetting />}/>
              <Route path="/user-change-password" element={<ChangePassword />}/>
+             <Route path="/teacher-login" element={<Teacher_Login />}/>
+             <Route path="/teacher-register" element={<Teacher_Register />}/>
+             <Route path="/teacher-dashboard" element={<Teacher_Dashboard />}/>
+             <Route path="/add-course" element={<AddCourse />}/>
+             <Route path="/my-students" element={<My_students />}/>
+             <Route path="/teacher-courses" element={<Teacher_Courses />}/>
+             <Route path="/teacher-profile-setting" element={<Teacher_ProfileSetting />}/>
+             <Route path="/teacher-change-password" element={<Teacher_ChangePassword />}/>
          </Switch>
            <Footer />
           </div>
