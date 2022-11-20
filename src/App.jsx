@@ -6,9 +6,11 @@ import {Routes as Switch,Route} from 'react-router-dom';
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer";
 import TeacherDetails from "./components/TeacherDetails";
+//details
 import LatestCourses from "./components/AllCourses.jsx";
 import PopularCourses from "./components/PopularCourses";
 import PopularTeachers from "./components/PopularTeachers";
+import CategoryCourses from "./components/CategoryCourses";
 
 //User
 import Register from "./components/user/Register";
@@ -58,6 +60,7 @@ function App(){
              <Route path="/latest-courses" element={<LatestCourses />}/>
              <Route path="/popular-courses" element={<PopularCourses />}/>
              <Route path="/popular-teachers" element={<PopularTeachers />}/>
+             <Route path="/category/:category_slug" element={<CategoryCourses />}/>
          </Switch>
            <Footer />
           </div>
