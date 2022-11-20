@@ -5,6 +5,9 @@ import CourseDetails from "./components/CourseDetails";
 import {Routes as Switch,Route} from 'react-router-dom';
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer";
+import TeacherDetails from "./components/TeacherDetails";
+
+//User
 import Register from "./components/user/Register";
 import Login from "./components/user/Login";
 import Dashboard from "./components/user/Dashboard";
@@ -13,6 +16,8 @@ import FavouriteCourse from "./components/user/FavouriteCourses";
 import RecommendedCourse from "./components/user/Recommendedcourse";
 import ProfileSetting from "./components/user/ProfileSetting";
 import ChangePassword from "./components/user/ChangePassword";
+
+//Teacher
 import Teacher_Login from "./components/teacher/Teacher_Login";
 import Teacher_Register from "./components/teacher/Teacher_Register";
 import Teacher_Dashboard from "./components/teacher/Teacher_Dashboard";
@@ -46,6 +51,7 @@ function App(){
              <Route path="/teacher-courses" element={<Teacher_Courses />}/>
              <Route path="/teacher-profile-setting" element={<Teacher_ProfileSetting />}/>
              <Route path="/teacher-change-password" element={<Teacher_ChangePassword />}/>
+             <Route path="/teacher-detail/:teacher_id" element={<TeacherDetails />}/>
          </Switch>
            <Footer />
           </div>
