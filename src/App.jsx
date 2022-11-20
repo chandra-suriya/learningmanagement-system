@@ -6,6 +6,9 @@ import {Routes as Switch,Route} from 'react-router-dom';
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer";
 import TeacherDetails from "./components/TeacherDetails";
+import LatestCourses from "./components/AllCourses.jsx";
+import PopularCourses from "./components/PopularCourses";
+import PopularTeachers from "./components/PopularTeachers";
 
 //User
 import Register from "./components/user/Register";
@@ -52,6 +55,9 @@ function App(){
              <Route path="/teacher-profile-setting" element={<Teacher_ProfileSetting />}/>
              <Route path="/teacher-change-password" element={<Teacher_ChangePassword />}/>
              <Route path="/teacher-detail/:teacher_id" element={<TeacherDetails />}/>
+             <Route path="/latest-courses" element={<LatestCourses />}/>
+             <Route path="/popular-courses" element={<PopularCourses />}/>
+             <Route path="/popular-teachers" element={<PopularTeachers />}/>
          </Switch>
            <Footer />
           </div>

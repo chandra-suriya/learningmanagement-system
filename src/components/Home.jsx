@@ -1,26 +1,26 @@
 import React from "react";
 import Card from "./Card";
-
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
             <div className="container mt-4">
-                <h3 className="pb-1 mb-3">Latest Courses <a href="#" className="float-end">See all</a></h3>
+                <h3 className="pb-1 mb-3">Latest Courses <Link to="/latest-courses" className="float-end">See all</Link></h3>
                 <div className="row">
                     <Card />
                     <Card />
                     <Card />
                     <Card />
                 </div>
-                <h3 className="pb-1 mb-3 mt-4">Popular Courses<a href="#" className="float-end">See all</a></h3>
+                <h3 className="pb-1 mb-3 mt-4">Popular Courses<Link to="/popular-courses" className="float-end">See all</Link></h3>
                 <div className="row">
                     <Card />
                     <Card />
                     <Card />
                     <Card />
                 </div>
-                <h3 className="pb-1 mb-3 mt-4">Popular Teachers<a href="#" className="float-end">See all</a></h3> 
+                <h3 className="pb-1 mb-3 mt-4">Popular Teachers<Link to="/popular-teachers" className="float-end">See all</Link></h3> 
                 <div className="row">
                     <Card />
                     <Card />
