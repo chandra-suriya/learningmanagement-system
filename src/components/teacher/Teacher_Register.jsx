@@ -1,6 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 function Teacher_Register() {
+    
+    useEffect(()=>{
+        document.title = "Teacher Register";
+    })
+
     return (
         <div className="container mt-4">
             <div className="row">
@@ -20,11 +25,15 @@ function Teacher_Register() {
 
                                 </div>
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputEmail1">Full Name</label>
-                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter FullName" />
+                                    <label for="exampleInputEmail1">Qualification</label>
+                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Qualification" />
 
                                 </div>
+                                <div className="form-group mb-4">
+                                    <label for="exampleInputEmail1">Mobile Number</label>
+                                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile num" />
 
+                                </div>
                                 <div className="form-group mb-4">
                                     <label for="exampleInputPassword1">Password</label>
                                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
@@ -34,8 +43,9 @@ function Teacher_Register() {
                                     <label for="exampleInputPassword1">Re Password</label>
                                     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                                 </div>
+
                                 <div class="form-group mb-4">
-                                    <label for="exampleFormControlTextarea1">Interest</label>
+                                    <label for="exampleFormControlTextarea1">Skills</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Interset" rows="3"></textarea>
                                     <small id="suggest" class="form-text text-muted">Ex python, java ...</small>
                                 </div>

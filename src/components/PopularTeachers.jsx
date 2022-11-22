@@ -1,7 +1,17 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import Card from "./Card.jsx";
+import axios from "axios";
 
 function PopularTeachers(){
+    const baseurl = "http://127.0.0.1:8000/api";
+
+    useEffect(()=>{
+           axios.get(baseurl+'/teacher/').then((response)=>{
+                console.log(response.data);
+           });
+    })
+
+
     return (
         <div className="container mt-3">
             <h3 className="pb-1">Popular Teachers </h3>
