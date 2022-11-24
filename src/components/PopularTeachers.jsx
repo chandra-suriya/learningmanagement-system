@@ -1,33 +1,34 @@
 import React,{useState, useEffect} from "react";
-import Card from "./Card.jsx";
+import TeacherCard from "./TeacherCard";
 import axios from "axios";
+
 
 function PopularTeachers(){
     const baseurl = "http://127.0.0.1:8000/api";
+    const [teacher_data, UseData] = useState([]);
 
     useEffect(()=>{
            axios.get(baseurl+'/teacher/').then((response)=>{
-                console.log(response.data);
+                UseData(response.data);
+               
            });
-    })
+    },[])
 
 
     return (
         <div className="container mt-3">
             <h3 className="pb-1">Popular Teachers </h3>
             <div className="row">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {teacher_data.map((data,index)=>{
+                    return(
+                         <TeacherCard 
+                            key = {index}
+                            name = {data.full_name}
+                         />
+                         )
+                     
+                })}
+
             </div>
             <nav aria-label="Page navigation example">
                 <ul className="pagination  justify-content-center mt-5">
