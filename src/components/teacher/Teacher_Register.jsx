@@ -54,6 +54,10 @@ function Teacher_Register() {
         }
 
     }
+    const teacherloginstatus = localStorage.getItem('teacherloginStatus')
+    if(teacherloginstatus === "true"){
+        window.location.href = "/teacher-dashboard";
+    }
     return (
         <div className="container mt-4">
             <div className="row">
@@ -62,44 +66,43 @@ function Teacher_Register() {
                     <div className="card">
                         <h5 className="card-header"> Teacher Register</h5>
                         <div className="card-body">
-                            <form className="pb-4">
+                           
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputEmail1">Full Name</label>
+                                    <label >Full Name</label>
                                     <input type="text" onChange={handleChange} className="form-control" name="full_name" placeholder="Enter UserName" />
 
                                 </div>
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputEmail1">Email</label>
+                                    <label htmlFor="exampleInputEmail1">Email</label>
                                     <input type="email" onChange={handleChange} className="form-control" name="email" placeholder="Enter Email" />
 
                                 </div>
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputEmail1">Qualification</label>
+                                    <label htmlFor="exampleInputEmail1">Qualification</label>
                                     <input type="text" onChange={handleChange} className="form-control" name="qualification" placeholder="Qualification" />
 
                                 </div>
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputEmail1">Mobile Number</label>
+                                    <label htmlFor="exampleInputEmail1">Mobile Number</label>
                                     <input type="text" onChange={handleChange} className="form-control" name="mobile_no" placeholder="Mobile num" />
 
                                 </div>
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputPassword1">Password</label>
+                                    <label htmlFor="exampleInputPassword1">Password</label>
                                     <input type="password" onChange={handleChange} className="form-control" name="password" placeholder="Password" />
                                 </div>
 
                                 <div className="form-group mb-4">
-                                    <label for="exampleInputPassword1">Re Password</label>
+                                    <label htmlFor="exampleInputPassword1">Re Password</label>
                                     <input type="password" className="form-control" name="password2" placeholder="Password" />
                                 </div>
 
                                 <div className="form-group mb-4">
-                                    <label for="exampleFormControlTextarea1">Skills</label>
+                                    <label htmlFor="exampleFormControlTextarea1">Skills</label>
                                     <textarea className="form-control" onChange={handleChange} id="exampleFormControlTextarea1" name="skills" placeholder="Interset" rows="3"></textarea>
                                     <small id="suggest" className="form-text text-muted">Ex python, java ...</small>
                                 </div>
                                 <button onClick={submitForm} type="submit" className="btn btn-primary">Submit</button>
-                            </form>
 
                         </div>
                     </div>

@@ -31,6 +31,7 @@ import My_students from "./components/teacher/My_students";
 import Teacher_Courses from "./components/teacher/Teacher_Courses";
 import Teacher_ProfileSetting from "./components/teacher/Teacher_ProfileSetting";
 import Teacher_ChangePassword from "./components/teacher/Teacher_ChangePassword";
+import Teacher_Logout from "./components/teacher/Teacher_Logout";
  
 function App(){
     return(
@@ -61,6 +62,7 @@ function App(){
              <Route path="/popular-courses" element={<PopularCourses />}/>
              <Route path="/popular-teachers" element={<PopularTeachers />}/>
              <Route path="/category/:category_slug" element={<CategoryCourses />}/>
+             <Route path="/teacher-logout" element={<Teacher_Logout />}/>
          </Switch>
            <Footer />
           </div>
