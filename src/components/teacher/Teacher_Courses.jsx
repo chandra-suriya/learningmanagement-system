@@ -27,7 +27,8 @@ function Teacher_Courses(){
                         <td>Php Developement</td>
                         <td><Link to="/">123</Link></td>
                         <td>
-                            <button className="btn btn-danger  btn-sm active">Delete</button>
+                            <button className="btn btn-danger  btn-sm active ms-2">Delete</button>
+                            <Link to="/add-module/1"><button className="btn  btn-success btn-sm active ms-2">Add Modules</button></Link>
                         </td>
                     </tr>
                      </tbody>
