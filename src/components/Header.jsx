@@ -43,9 +43,10 @@ const Header = () => {
                 {teacherloginstatus=== null && <>
                 <Link className="dropdown-item" to="/teacher-register">Register</Link>
                 <Link className="dropdown-item" to="/teacher-login">Login</Link>
-                  <div className="dropdown-divider"></div></>}
+                </>}
+                  { teacherloginstatus === "true" && <>
                   <Link className="dropdown-item" to="/teacher-dashboard">Dash board</Link>
-                  <Link className="dropdown-item" to="/teacher-logout">Logout</Link>
+                  <Link className="dropdown-item" to="/teacher-logout">Logout</Link></>}
 
                 </div>
               </li>

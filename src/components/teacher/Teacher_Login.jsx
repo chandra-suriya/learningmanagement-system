@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+//import userStore  from "../zustand_store/userStore";
 import axios from "axios";
+
 
 function Teacher_Login() {
     const baseurl = "http://127.0.0.1:8000/api/teacherlogin/";
@@ -28,6 +30,7 @@ function Teacher_Login() {
                setrespodata(response.data);
                if(respodata.success===true){
                  localStorage.setItem('teacherloginStatus',"true");
+                 window.location.href = "/teacher-dashboard"
                }
             })
         }
@@ -35,6 +38,7 @@ function Teacher_Login() {
               console.log(error)
         }
     }
+   
     const teacherloginstatus = localStorage.getItem('teacherloginStatus')
         if(teacherloginstatus === "true"){
             window.location.href = "/teacher-dashboard";
@@ -43,7 +47,7 @@ function Teacher_Login() {
         <div className="container mt-4">
             <div className="row">
                 <div className="col-6 offset-3">
-                {respodata.success=== true && <p className="text-success">please click Another time for sucessful Login!</p>}
+                {respodata.success === true && <p className="text-success">please click Another time for sucessful Login!</p>}
                 {respodata.success=== false && <p className="text-danger">Invalid UserName and Password</p>}
                     <div className="card">
                         <h5 className="card-header"> Teacher Login</h5>
